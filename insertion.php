@@ -1,6 +1,5 @@
 <?php 
 
-
 //ouverture d'une connection à la bdd liste
 $objectpdo = new PDO('mysql:host=localhost;dbname=liste','adam', 'azerty');
 
@@ -12,7 +11,8 @@ $pdostatement->bindValue('toto',$_POST['todo']);
 
 $insertvalid = $pdostatement->execute();
 
-
+header("Location: index.php");
+exit();
 ?>
 
 

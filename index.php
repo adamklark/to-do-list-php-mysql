@@ -14,13 +14,14 @@
 
   <body>
     <main>
-      <form method="POST">
+      <form action="insertion.php" method="POST">
         <label for="add-task">Nouvelle tâche</label>
-        <input id="add-task" name="todo" />
-        <button>Ajouter</button>
+        <input id="add-task" required name="todo" />
+        <button id="add">Ajouter</button>
+        <button id="remove">Effacer</button>
       </form>
       <ul>
-        <?php require("./insertion.php"); ?>
+        <?php require("./show.php"); ?>
       </ul>
     </main>
   </body>
